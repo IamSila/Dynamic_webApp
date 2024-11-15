@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 """Teams Model"""
-class Teams(models.Model):
+class Team(models.Model):
     """creating a model to store the details for the teams sections
     - Full name
     - profile photo
@@ -16,3 +16,7 @@ class Teams(models.Model):
     position = models.CharField(max_length=255)
     description = models.TextField()
     profile_photo = models.ImageField(upload_to='profiles')
+
+    def __str__(self):
+        """returns the full_name of the object as the name of that object"""
+        return f"{self.full_name} ----> {self.postion}"
