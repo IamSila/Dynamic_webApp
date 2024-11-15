@@ -19,4 +19,4 @@ class Team(models.Model):
 
     def __str__(self):
         """returns the full_name of the object as the name of that object"""
-        return f"{self.full_name} ----> {self.postion}"
+        return f"{self.full_name} ----> {self.position}"
