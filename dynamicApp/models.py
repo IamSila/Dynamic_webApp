@@ -33,7 +33,7 @@ class Analytic(models.Model):
     """
     clients = models.IntegerField()
     projects = models.IntegerField()
-    Hours_of_support = models.IntegerField()
+    HoursOfSupport = models.IntegerField()
     workers = models.IntegerField()
 
     def __str__(self):
