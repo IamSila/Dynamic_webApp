@@ -20,3 +20,22 @@ class Team(models.Model):
     def __str__(self):
         """returns the full_name of the object as the name of that object"""
         return f"{self.full_name} ----> {self.position}"
+
+
+
+"""analytics model"""
+class Analytic(models.Model):
+    """creating the fields in the db for the analytics table
+    - clients
+    - projects
+    - Hours of support
+    - workers
+    """
+    clients = models.IntegerField()
+    projects = models.IntegerField()
+    Hours_of_support = models.IntegerField()
+    workers = models.IntegerField()
+
+    def __str__(self):
+        """names assigned to the object of this class"""
+        return "siteAnalytics"
